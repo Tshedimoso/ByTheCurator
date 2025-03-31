@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | ByTheCurator</title>
+    <link rel="stylesheet" href="collections.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ByTheCurator</div>
+        <div class="menu-bar">
+            
+            <button onclick="toggleMenu()">☰</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artists.html">Articles</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Collections Section -->
+    <section class="collections">
+        <h2>DISPLAYED</h2>
+        <div class="collections-grid">
+            <!-- Collection 1 -->
+            <div class="collection-item">
+                <img src="backgroundforBTC1.jpg" alt="Collection 1">
+                <h3>Modern Expressions</h3>
+            </div>
+            <!-- Collection 2 -->
+            <div class="collection-item">
+                <img src="backgroundforBTC2.jpg" alt="Collection 2">
+                <h3>Cultural Roots</h3>
+            </div>
+            <!-- Collection 3 -->
+            <div class="collection-item">
+                <img src="backgroundforBTC3.jpg" alt="Collection 3">
+                <h3>Abstract Wonders</h3>
+            </div>
+            <div class="collection-item">
+                <img src="backgroundforBTC4.jpg" alt="Collection 3">
+                <h3>Urban Echoes</h3>
+            </div>
+            <div class="collection-item">
+                <img src="backgroundforBTC5.jpg" alt="Collection 3">
+                <h3>Harvest of Hues</h3>
+            </div>
+            <div class="collection-item">
+                <img src="backgroundforBTC6.jpg" alt="Collection 3">
+                <h3>Fragmented Faces</h3>
+            </div>
+                        <!-- Add more collection items as needed -->
+        </div>
+    </section>
+
+    <footer>
+        
+        <div class="newsletter">
+            <a href="https://www.instagram.com/btcurator/" target="_blank">
+                <button>Follow Us On Instagram</button>
+            </a>
+        </div>
+        <p>&copy; 2024 ByTheCurator. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
