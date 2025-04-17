@@ -168,4 +168,18 @@ footer .newsletter button {
   .carousel-container::-webkit-scrollbar {
     display: none; /* Chrome, Safari */
   }
+  @media (max-width: 768px) {
+    .collections h2 {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+}
+
+/* Adjust heading for mobile screens */
+@media (max-width: 480px) {
+    .collections h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+}
   

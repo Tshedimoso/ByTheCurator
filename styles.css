@@ -484,6 +484,9 @@ span{
     .artist-card {
         width: 200px;  /* Adjust card width for smaller screens */
     }
+    .artist-cards {
+        width: 200px;  /* Adjust card width for smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
@@ -492,6 +495,9 @@ span{
     }
 
     .artist-card {
+        width: 150px;  /* Further adjust card width on very small screens */
+    }
+    .artist-cards {
         width: 150px;  /* Further adjust card width on very small screens */
     }
 }
