@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color:#fdfcfc;
+    background-color: #fdfcfc;
     color: #0a0909;
 }
 
@@ -89,10 +89,10 @@ footer .newsletter button {
 .collections h2 {
     font-size: 90px;
     margin-bottom: 50px;
-    margin-top:10px;
-    text-align:center;
+    margin-top: 10px;
+    text-align: center;
     color: white;
-    font-family:fantasy
+    font-family: fantasy;
 }
 
 /* Grid Container */
@@ -112,15 +112,15 @@ footer .newsletter button {
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-    height: auto; /* Allow flexible height */
+    height: auto;
 }
 
 /* Image Styling */
 .collection-item img {
     width: 100%;
-    height: auto; /* Ensures no cropping and preserves aspect ratio */
-    object-fit: contain; /* Prevents stretching and distortion */
-    max-height: 300px; /* Controls the image height */
+    height: auto;
+    object-fit: contain;
+    max-height: 300px;
 }
 
 /* Artist's Name Styling */
@@ -138,19 +138,41 @@ footer .newsletter button {
     transform: scale(1.05);
 }
 
+/* Carousel Container */
+.carousel-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .collections-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
+
+    .collections h2,
     .collection h2 {
         font-size: 60px;
-    margin-bottom: 50px;
-    margin-top:10px;
-    text-align:center;
-    color: white;
-    font-family:fantasy
+        margin-bottom: 50px;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        font-family: fantasy;
+    }
 
+    .carousel-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .carousel-container::-webkit-scrollbar {
+        display: none;
     }
 }
 
@@ -158,46 +180,19 @@ footer .newsletter button {
     .collections-grid {
         grid-template-columns: 1fr;
     }
-}
-.carousel-container {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
-    scrollbar-width: none; /* Firefox */
-  }
-  
-  .carousel-container::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
-  }
-  @media (max-width: 768px) {
-    .collections h2 {
-        font-size: 60px;
-        margin-bottom: 40px;
-    }
-    .carousel-container {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
-        scrollbar-width: none; /* Firefox */
-      }
-      
-      .carousel-container::-webkit-scrollbar {
-        display: none; /* Chrome, Safari */
-      }
-}
 
-/* Adjust heading for mobile screens */
-@media (max-width: 480px) {
     .collections h2 {
         font-size: 40px;
         margin-bottom: 30px;
     }
+
     .carousel-container {
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
-        scrollbar-width: none; /* Firefox */
-      }
-      
-      .carousel-container::-webkit-scrollbar {
-        display: none; /* Chrome, Safari */
-      }
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .carousel-container::-webkit-scrollbar {
+        display: none;
+    }
 }
-  
