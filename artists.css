@@ -110,3 +110,43 @@
 .view-profile-btn:hover {
     background-color:#0056b3;
 }
+
+/* Wrapper for the entire slider */
+.image-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Container for all images */
+.slider-images {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+}
+
+.slider-images::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+/* Individual images */
+.slider-images img {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
