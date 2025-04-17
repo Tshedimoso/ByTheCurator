@@ -159,3 +159,13 @@ footer .newsletter button {
         grid-template-columns: 1fr;
     }
 }
+.carousel-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .carousel-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  
