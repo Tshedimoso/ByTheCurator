@@ -495,3 +495,14 @@ span{
         width: 150px;  /* Further adjust card width on very small screens */
     }
 }
+ 
+.carousel-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .carousel-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  
