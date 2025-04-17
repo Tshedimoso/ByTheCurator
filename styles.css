@@ -299,6 +299,13 @@ span{
         display:contents 
           
     }
+    .slider-images {
+        display: flex;
+        
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none; /* Firefox */
+    }
     
 }
 
@@ -366,6 +373,13 @@ span{
         margin-left: auto; /* Moves the search bar to the right */
       
       }
+      .slider-images {
+        display: flex;
+        
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none; /* Firefox */
+    }
 
     }
 
@@ -409,7 +423,13 @@ span{
         margin-left: auto; /* Moves the search bar to the right */
       
       }
-
+      .slider-images {
+        display: flex;
+        
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none; /* Firefox */
+    }
     
 }
 
@@ -427,6 +447,13 @@ span{
         padding: 0.5rem 1rem;
         cursor: pointer;
         margin-left: auto;
+    }
+    .slider-images {
+        display: flex;
+        
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none; /* Firefox */
     }
 }
 /* Container for Featured Artists */
@@ -498,6 +525,13 @@ span{
     }
     .artist-cards {
         width: 150px;  /* Further adjust card width on very small screens */
+    }
+    .slider-images {
+        display: flex;
+        
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none; /* Firefox */
     }
 }
  
