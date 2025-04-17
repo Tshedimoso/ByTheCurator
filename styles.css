@@ -232,7 +232,15 @@ span{
         align-items: flex-start;
     }
 
-    
+    .hero .cta-btn {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #9d0620;
+        color: #fdfdfe;
+        text-decoration: none;
+        border-radius: 5px;
+        flex:auto;
+    }
 
     .menu-bar {
         display: flex;
