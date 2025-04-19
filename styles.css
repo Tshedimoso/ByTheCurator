@@ -544,4 +544,41 @@ span{
   .carousel-container::-webkit-scrollbar {
     display: none; /* Chrome, Safari */
   }
+
+  @media only screen and (max-width: 375px) {
+    .artist-card img {
+        width: 100%;  /* Ensures the image scales responsively */
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    .artist-card {
+        width: 250px;  /* Fixed width for each artist card */
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        flex-shrink: 0;  /* Prevents cards from shrinking */
+    
+  }
+}
+  @media only screen and (max-width: 320px) {
+    .artist-card img {
+        width: 100%;  /* Ensures the image scales responsively */
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    .artist-card {
+        width: 250px;  /* Fixed width for each artist card */
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        flex-shrink: 0;  /* Prevents cards from shrinking */
+    
+  }
+}
   
